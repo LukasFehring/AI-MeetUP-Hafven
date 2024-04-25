@@ -5,15 +5,14 @@ This repository contains the data and scripts for predicting survival on the Tit
 
 ## Contents
 - `titanic_train.csv` - The training dataset.
-- `titanic_validation.csv` - The validation dataset for model tuning.
+- `titanic_test.csv` - The test dataset for model tuning.
 - `titanic_test.csv` - The test dataset for final model evaluation.
 - `titanic_analysis.py` - Python script for training the model using auto-sklearn.
 
 ## Setup
 
 ### Prerequisites
-- Python 3.x
-- pip
+- Python 3.9
 
 ### Installation
 Install the required Python package `auto-sklearn` using pip:
@@ -29,7 +28,7 @@ To run the script and train the model, execute:
 python titanic_analysis.py
 ```
 
-The script will train a model using the training data and evaluate it on the validation set. The best model's performance will be printed out.
+The script will train a model using the training data and evaluate it on the test set. The best model's performance will be printed out.
 
 ## Note
 Ensure all data files and the script are in the same directory when you run the script.
